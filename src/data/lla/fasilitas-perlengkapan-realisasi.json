@@ -1,0 +1,37 @@
+[
+	{
+		"id": 1,
+		"uraian": "Jumlah Rambu (unit)",
+		"tahun_2022": 2527,
+		"tahun_2023": 2261,
+		"tahun_2024": 2345
+	},
+	{
+		"id": 2,
+		"uraian": "Jumlah Marka (M²)",
+		"tahun_2022": 188292,
+		"tahun_2023": 219461,
+		"tahun_2024": 337132
+	},
+	{
+		"id": 3,
+		"uraian": "Jumlah Traffic Light (Titik)",
+		"tahun_2022": 26,
+		"tahun_2023": 26,
+		"tahun_2024": 26
+	},
+	{
+		"id": 4,
+		"uraian": "Jumlah Warning Light (unit)",
+		"tahun_2022": 22,
+		"tahun_2023": 31,
+		"tahun_2024": 31
+	},
+	{
+		"id": 5,
+		"uraian": "Jumlah Halte (Titik)",
+		"tahun_2022": 201,
+		"tahun_2023": 134,
+		"tahun_2024": 146
+	}
+]

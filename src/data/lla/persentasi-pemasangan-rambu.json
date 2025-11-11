@@ -1,0 +1,41 @@
+[
+	{
+		"id": 1,
+		"uraian": "Jumlah Pemasangan Rambu (unit)",
+		"tahun_2016": 2058,
+		"tahun_2017": 2104,
+		"tahun_2018": 2237,
+		"tahun_2019": 2305,
+		"tahun_2020": 2324,
+		"tahun_2021": 2424,
+		"tahun_2022": 2527,
+		"tahun_2023": 2261,
+		"tahun_2024": 2345
+	},
+	{
+		"id": 2,
+		"uraian": "Jumlah Rambu yang Harus Tersedia",
+		"tahun_2016": 2250,
+		"tahun_2017": 2250,
+		"tahun_2018": 2360,
+		"tahun_2019": 2360,
+		"tahun_2020": 2360,
+		"tahun_2021": 2360,
+		"tahun_2022": 2540,
+		"tahun_2023": 2590,
+		"tahun_2024": 2590
+	},
+	{
+		"id": 3,
+		"uraian": "Persentase (%)",
+		"tahun_2016": null,
+		"tahun_2017": 91,
+		"tahun_2018": 93,
+		"tahun_2019": 94,
+		"tahun_2020": 97,
+		"tahun_2021": 98,
+		"tahun_2022": 103,
+		"tahun_2023": 87.3,
+		"tahun_2024": 90.54
+	}
+]

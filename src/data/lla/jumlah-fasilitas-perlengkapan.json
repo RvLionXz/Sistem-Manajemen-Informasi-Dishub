@@ -1,0 +1,23 @@
+[
+	{
+		"id": 1,
+		"uraian": "Papan Nama (unit)",
+		"tahun_2023": 1200,
+		"tahun_2024": 1250,
+		"tahun_2025": 1300
+	},
+	{
+		"id": 2,
+		"uraian": "Jumlah Rambu (unit)",
+		"tahun_2023": 5000,
+		"tahun_2024": 5200,
+		"tahun_2025": 5500
+	},
+	{
+		"id": 3,
+		"uraian": "Jumlah Marka (M²)",
+		"tahun_2023": 8500,
+		"tahun_2024": 8700,
+		"tahun_2025": 9000
+	}
+]

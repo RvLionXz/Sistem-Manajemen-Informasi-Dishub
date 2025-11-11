@@ -1,0 +1,232 @@
+[
+	{
+		"id": 1,
+		"nama_halte": "HALTE SPORT CENTER UNSYIAH",
+		"kode": "HASK01",
+		"lat": 5.566104,
+		"long": 95.375734,
+		"lokasi": "Jl. Lingkar Kampus Unsyiah",
+		"kecamatan": "Syiah Kuala",
+		"gambar": "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
+	},
+	{
+		"id": 2,
+		"nama_halte": "HALTE MESJID JAMIK",
+		"kode": "HASK02",
+		"lat": 5.571436,
+		"long": 95.3711299,
+		"lokasi": "Jl. T. Nyak Arief",
+		"kecamatan": "Syiah Kuala",
+		"gambar": "https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+	},
+	{
+		"id": 3,
+		"nama_halte": "HALTE DEPAN SD 16 SYIAH KUALA",
+		"kode": "HASK03",
+		"lat": 5.573048,
+		"long": 95.362792,
+		"lokasi": "Jl. T. Nyak Arief",
+		"kecamatan": "Syiah Kuala",
+		"gambar": "https://images.unsplash.com/photo-1473187983305-f615310e7daa"
+	},
+	{
+		"id": 4,
+		"nama_halte": "HALTE PUSTAKA WILAYAH",
+		"kode": "HASK04",
+		"lat": 5.575029,
+		"long": 95.355445,
+		"lokasi": "Jl. T. Nyak Arief",
+		"kecamatan": "Syiah Kuala",
+		"gambar": "https://images.unsplash.com/photo-1491553895911-0055eca6402d"
+	},
+	{
+		"id": 5,
+		"nama_halte": "HALTE SIMPANG PRADA",
+		"kode": "HASK05",
+		"lat": 5.575292,
+		"long": 95.347411,
+		"lokasi": "Jl. T. Nyak Arief",
+		"kecamatan": "Syiah Kuala",
+		"gambar": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f"
+	},
+	{
+		"id": 6,
+		"nama_halte": "HALTE RUBBASAN",
+		"kode": "HASK06",
+		"lat": 5.573733,
+		"long": 95.345418,
+		"lokasi": "Jl. T. Nyak Arief",
+		"kecamatan": "Syiah Kuala",
+		"gambar": "https://images.unsplash.com/photo-1519999482648-25049ddd37b1"
+	},
+	{
+		"id": 7,
+		"nama_halte": "HALTE BKKBN",
+		"kode": "HAKA01",
+		"lat": 5.569729,
+		"long": 95.341646,
+		"lokasi": "Jl. T. Nyak Arief",
+		"kecamatan": "Kuta Alam",
+		"gambar": "https://images.unsplash.com/photo-1533750349088-cd871a92f312"
+	},
+	{
+		"id": 8,
+		"nama_halte": "HALTE MASJID AL-MAKMUR",
+		"kode": "HAKA02",
+		"lat": 5.566833,
+		"long": 95.338504,
+		"lokasi": "Jl. Daud Beureueh",
+		"kecamatan": "Kuta Alam",
+		"gambar": "https://images.unsplash.com/photo-1549641204-8e8c3fd36a8b"
+	},
+	{
+		"id": 9,
+		"nama_halte": "HALTE PLN",
+		"kode": "HAKA03",
+		"lat": 5.56314,
+		"long": 95.334591,
+		"lokasi": "Jl. Daud Beureueh",
+		"kecamatan": "Kuta Alam",
+		"gambar": "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca"
+	},
+	{
+		"id": 10,
+		"nama_halte": "HALTE SATPOL PP",
+		"kode": "HAKA04",
+		"lat": 5.559516,
+		"long": 95.331159,
+		"lokasi": "Jl. Daud Beureueh",
+		"kecamatan": "Kuta Alam",
+		"gambar": "https://images.unsplash.com/photo-1469474968028-56623f02e42e"
+	},
+	{
+		"id": 11,
+		"nama_halte": "HALTE BAPPEDA",
+		"kode": "HAKA05",
+		"lat": 5.557252,
+		"long": 95.325506,
+		"lokasi": "Jl. Daud Beureueh",
+		"kecamatan": "Kuta Alam",
+		"gambar": "https://images.unsplash.com/photo-1502082553048-f009c37129b9"
+	},
+	{
+		"id": 12,
+		"nama_halte": "HALTE PERTAMINA",
+		"kode": "HAKA06",
+		"lat": 5.557468,
+		"long": 95.3254,
+		"lokasi": "Jl. Daud Beureueh",
+		"kecamatan": "Kuta Alam",
+		"gambar": "https://images.unsplash.com/photo-1473181488821-2d23949a045a"
+	},
+	{
+		"id": 13,
+		"nama_halte": "HALTE SIMPANG LIMA",
+		"kode": "HAKA07",
+		"lat": 5.556238,
+		"long": 95.322971,
+		"lokasi": "Jl. Daud Beureueh",
+		"kecamatan": "Kuta Alam",
+		"gambar": "https://images.unsplash.com/photo-1491553895911-0055eca6402d"
+	},
+	{
+		"id": 14,
+		"nama_halte": "HALTE PWI",
+		"kode": "HAKA08",
+		"lat": 5.555646,
+		"long": 95.322487,
+		"lokasi": "Jl. T. Hamzah Bendahara",
+		"kecamatan": "Kuta Alam",
+		"gambar": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f"
+	},
+	{
+		"id": 15,
+		"nama_halte": "HALTE SD 33",
+		"kode": "HABA01",
+		"lat": 5.551262,
+		"long": 95.322842,
+		"lokasi": "Jl. Tengku Chik Ditiro",
+		"kecamatan": "Baiturrahman",
+		"gambar": "https://images.unsplash.com/photo-1519681393784-d120267933ba"
+	},
+	{
+		"id": 16,
+		"nama_halte": "HALTE LAMTEMEN TIMUR",
+		"kode": "HAJB01",
+		"lat": 5.533533,
+		"long": 95.302431,
+		"lokasi": "Jl. Cut Nyak Dhien",
+		"kecamatan": "Jaya Baru",
+		"gambar": "https://images.unsplash.com/photo-1522199710521-72d69614c702"
+	},
+	{
+		"id": 17,
+		"nama_halte": "HALTE MIN 7",
+		"kode": "HAJB02",
+		"lat": 5.530341,
+		"long": 95.297241,
+		"lokasi": "Jl. Cut Nyak Dhien",
+		"kecamatan": "Jaya Baru",
+		"gambar": "https://images.unsplash.com/photo-1501854140801-50d01698950b"
+	},
+	{
+		"id": 18,
+		"nama_halte": "HALTE PEMANCAR",
+		"kode": "HAJB03",
+		"lat": 5.535332,
+		"long": 95.304979,
+		"lokasi": "Jl. Teuku Umar",
+		"kecamatan": "Jaya Baru",
+		"gambar": "https://images.unsplash.com/photo-1473181488821-2d23949a045a"
+	},
+	{
+		"id": 19,
+		"nama_halte": "HALTE SIMPANG TIGA",
+		"kode": "HABR01",
+		"lat": 5.533837,
+		"long": 95.303391,
+		"lokasi": "Jl. Cut Nyak Dhien",
+		"kecamatan": "Banda Raya",
+		"gambar": "https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+	},
+	{
+		"id": 20,
+		"nama_halte": "HALTE DEPAN MIN LHONG RAYA",
+		"kode": "HABR02",
+		"lat": 5.520775,
+		"long": 95.322147,
+		"lokasi": "Jl. Sultan Malikul Saleh",
+		"kecamatan": "Banda Raya",
+		"gambar": "https://images.unsplash.com/photo-1512428559087-560fa5ceab42"
+	},
+	{
+		"id": 21,
+		"nama_halte": "HALTE DEPAN MIN LHONG RAYA",
+		"kode": "HABR03",
+		"lat": 5.520661,
+		"long": 95.322187,
+		"lokasi": "Jl. Sultan Malikul Saleh",
+		"kecamatan": "Banda Raya",
+		"gambar": "https://images.unsplash.com/photo-1486308510493-aa64833634ef"
+	},
+	{
+		"id": 22,
+		"nama_halte": "HALTE IMUM LUENGBATA",
+		"kode": "HALB01",
+		"lat": 5.541321,
+		"long": 95.33744,
+		"lokasi": "Jl. Tgk. Imum Lueng Bata",
+		"kecamatan": "Luengbata",
+		"gambar": "https://images.unsplash.com/photo-1502082553048-f009c37129b9"
+	},
+	{
+		"id": 23,
+		"nama_halte": "HALTE IMUM LUENGBATA",
+		"kode": "HALB02",
+		"lat": 5.542313,
+		"long": 95.336439,
+		"lokasi": "Jl. Tgk. Imum Lueng Bata",
+		"kecamatan": "Luengbata",
+		"gambar": "https://images.unsplash.com/photo-1522199710521-72d69614c702"
+	}
+]

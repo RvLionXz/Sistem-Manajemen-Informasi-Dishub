@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"uraian": "Jumlah Rambu (unit)",
+		"tahun_2022": 2527,
+		"tahun_2023": 2261
+	},
+	{
+		"id": 2,
+		"uraian": "Jumlah Rambu (unit) yang seharusnya tersedia",
+		"tahun_2022": 2600,
+		"tahun_2023": 2500
+	},
+	{
+		"id": 3,
+		"uraian": "Jumlah Marka (M²)",
+		"tahun_2022": 188292,
+		"tahun_2023": 219461
+	},
+	{
+		"id": 4,
+		"uraian": "Jumlah Marka (M²) yang seharusnya tersedia",
+		"tahun_2022": 200000,
+		"tahun_2023": 225000
+	}
+]

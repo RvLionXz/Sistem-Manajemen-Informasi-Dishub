@@ -1,0 +1,38 @@
+[
+	{
+		"id": 1,
+		"uraian": "Jumlah Halte Angkot",
+		"tahun_2017": 29,
+		"tahun_2018": 28,
+		"tahun_2019": 28,
+		"tahun_2020": 28,
+		"tahun_2021": 28,
+		"tahun_2022": null,
+		"tahun_2023": null,
+		"tahun_2024": 25
+	},
+	{
+		"id": 2,
+		"uraian": "Jumlah Halte Bus Rapid Transit (BRT)",
+		"tahun_2017": 60,
+		"tahun_2018": 60,
+		"tahun_2019": 123,
+		"tahun_2020": 139,
+		"tahun_2021": 139,
+		"tahun_2022": null,
+		"tahun_2023": null,
+		"tahun_2024": 121
+	},
+	{
+		"id": 3,
+		"uraian": "Jumlah (Total)",
+		"tahun_2017": 89,
+		"tahun_2018": 89,
+		"tahun_2019": 151,
+		"tahun_2020": 167,
+		"tahun_2021": 167,
+		"tahun_2022": 0,
+		"tahun_2023": 0,
+		"tahun_2024": 146
+	}
+]
