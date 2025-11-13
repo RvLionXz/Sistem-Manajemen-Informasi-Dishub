@@ -9,10 +9,10 @@ const SidebarMenu = ({ item, level = 0 }) => {
 	const location = useLocation();
 
 	const isActive = (menuItem) => {
-		if (menuItem.path && location.pathname.startsWith(menuItem.path)) {
+		if (menuItem.path && location.pathname === menuItem.path) {
 			return true;
 		}
-		if (menuItem.children) {
+		if (menuItem.children && menuItem.children.length > 0) {
 			return menuItem.children.some((child) => isActive(child));
 		}
 		return false;
@@ -24,7 +24,7 @@ const SidebarMenu = ({ item, level = 0 }) => {
 		if (isParentActive) {
 			setIsOpen(true);
 		}
-	}, [location.pathname]);
+	}, [location.pathname, isParentActive]);
 
 	const Icon = item.icon
 		? Icons[item.icon]
@@ -32,7 +32,7 @@ const SidebarMenu = ({ item, level = 0 }) => {
 		? Icons.CircleDot
 		: Icons.Circle;
 
-	if (item.children) {
+	if (item.children && item.children.length > 0) {
 		return (
 			<li
 				className={`${isParentActive ? "bg-gray-700/50 rounded-md" : ""} my-1`}
@@ -66,8 +66,8 @@ const SidebarMenu = ({ item, level = 0 }) => {
 					}`}
 				>
 					<ul className={`overflow-hidden pl-5`}>
-						{item.children.map((child, index) => (
-							<SidebarMenu key={index} item={child} level={level + 1} />
+						{item.children.map((child) => (
+							<SidebarMenu key={child.id} item={child} level={level + 1} />
 						))}
 					</ul>
 				</div>

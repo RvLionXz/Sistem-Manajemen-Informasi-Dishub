@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import LoginPage from "../pages/auth/LoginPage";
 import RegisterPage from "../pages/auth/RegisterPage";
 import DashboardPage from "../pages/protected/DashboardPage";
-import GenericCrudPage from "../pages/protected/GenericCrudPage";
+import GenericPageRenderer from "../pages/protected/GenericPageRenderer";
 import ProtectedRoute from "./ProtectedRoute";
 
 const AppRoutes = () => {
@@ -15,7 +15,7 @@ const AppRoutes = () => {
 
 			<Route element={<ProtectedRoute />}>
 				<Route path="/dashboard" element={<DashboardPage />} />
-				<Route path="/data/*" element={<GenericCrudPage />} />
+				<Route path="/page/*" element={<GenericPageRenderer />} />
 			</Route>
 
 			<Route path="*" element={<h1>404 Not Found</h1>} />

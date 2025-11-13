@@ -1,28 +1,36 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { menuItems } from "../../router/menu";
 import { ChevronRight, Home } from "lucide-react";
+import { useAppContext } from "../../context/AppContext";
 
-const findPath = (items, pathname) => {
-	for (const item of items) {
-		if (item.path === pathname) {
-			return [item];
-		}
-		if (item.children) {
-			const childPath = findPath(item.children, pathname);
-			if (childPath.length > 0) {
-				return [item, ...childPath];
-			}
-		}
+const findPathFromSchema = (menus, pathname) => {
+	if (!menus || menus.length === 0) {
+		return [];
 	}
-	return [];
+
+	const menuMap = new Map(menus.map((menu) => [menu.id, menu]));
+	const currentMenuItem = menus.find((menu) => menu.path === pathname);
+
+	if (!currentMenuItem) {
+		return [];
+	}
+
+	const path = [];
+	let current = currentMenuItem;
+	while (current) {
+		path.unshift(current);
+		current = menuMap.get(current.parent_id);
+	}
+
+	return path;
 };
 
 const Breadcrumb = () => {
 	const location = useLocation();
-	const pathParts = findPath(menuItems, location.pathname);
+	const { schema } = useAppContext();
+	const pathParts = findPathFromSchema(schema.menus, location.pathname);
 
-	if (location.pathname === "/dashboard" || pathParts.length === 0) {
+	if (location.pathname === "/dashboard" || pathParts.length <= 1) {
 		return null;
 	}
 
@@ -36,7 +44,7 @@ const Breadcrumb = () => {
 				Dashboard
 			</Link>
 			{pathParts.map((part, index) => (
-				<React.Fragment key={index}>
+				<React.Fragment key={part.id}>
 					<ChevronRight size={16} className="mx-1" />
 					{index === pathParts.length - 1 ? (
 						<span className="font-semibold text-gray-800">{part.name}</span>

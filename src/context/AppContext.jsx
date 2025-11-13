@@ -1,4 +1,5 @@
 import React, { createContext, useState, useContext, useEffect } from "react";
+import schemaData from "../config/simadis_schema.json";
 
 const AppContext = createContext();
 
@@ -6,14 +7,15 @@ export const AppProvider = ({ children }) => {
 	const [isSidebarOpen, setIsSidebarOpen] = useState(window.innerWidth > 768);
 	const [isAuthenticated, setIsAuthenticated] = useState(false);
 	const [user, setUser] = useState(null);
+	const [schema, setSchema] = useState({ menus: [], pages: {}, tables: {} });
+
+	useEffect(() => {
+		setSchema(schemaData);
+	}, []);
 
 	useEffect(() => {
 		const handleResize = () => {
-			if (window.innerWidth <= 768) {
-				setIsSidebarOpen(false);
-			} else {
-				setIsSidebarOpen(true);
-			}
+			setIsSidebarOpen(window.innerWidth > 768);
 		};
 		window.addEventListener("resize", handleResize);
 		return () => window.removeEventListener("resize", handleResize);
@@ -50,6 +52,7 @@ export const AppProvider = ({ children }) => {
 		user,
 		login,
 		logout,
+		schema,
 	};
 
 	return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

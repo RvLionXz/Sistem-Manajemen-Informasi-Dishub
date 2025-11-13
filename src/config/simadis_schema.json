@@ -1,0 +1,128 @@
+{
+	"menus": [
+		{
+			"id": "dashboard",
+			"name": "Dashboard",
+			"path": "/dashboard",
+			"icon": "LayoutDashboard",
+			"parent_id": null
+		},
+		{
+			"id": "lla",
+			"name": "LLA",
+			"path": null,
+			"icon": "TrafficCone",
+			"parent_id": null
+		},
+		{
+			"id": "lla_halte",
+			"name": "Jumlah Halte Angkutan Umum",
+			"path": "/page/jumlah-halte-angkutan-umum",
+			"icon": "Bus",
+			"parent_id": "lla"
+		},
+		{
+			"id": "lla_lokasi",
+			"name": "Lokasi Halte",
+			"path": "/page/lokasi-halte",
+			"icon": "MapPin",
+			"parent_id": "lla"
+		},
+		{
+			"id": "lla_fasilitas",
+			"name": "Jumlah Fasilitas Perlengkapan",
+			"path": "/page/jumlah-fasilitas-perlengkapan",
+			"icon": "Wrench",
+			"parent_id": "lla"
+		},
+		{
+			"id": "lla_rambu",
+			"name": "Persentasi Pemasangan Rambu",
+			"path": "/page/persentasi-pemasangan-rambu",
+			"icon": "Signal",
+			"parent_id": "lla"
+		}
+	],
+
+	"pages": {
+		"/page/jumlah-halte-angkutan-umum": {
+			"title": "Jumlah Halte Angkutan Umum",
+			"layout": "table",
+			"table_id": "tbl_halte_angkutan_umum"
+		},
+		"/page/lokasi-halte": {
+			"title": "Lokasi Halte",
+			"layout": "table",
+			"table_id": "tbl_lokasi_halte"
+		},
+		"/page/persentasi-pemasangan-rambu": {
+			"title": "Persentasi Pemasangan Rambu",
+			"layout": "table",
+			"table_id": "tbl_persentasi_rambu"
+		},
+		"/page/jumlah-fasilitas-perlengkapan": {
+			"title": "Jumlah Fasilitas Perlengkapan",
+			"layout": "tabs",
+			"tabs": [
+				{
+					"id": "realisasi",
+					"label": "Data Realisasi",
+					"table_id": "tbl_fasilitas_realisasi"
+				},
+				{
+					"id": "kebutuhan",
+					"label": "Data Kebutuhan",
+					"table_id": "tbl_fasilitas_kebutuhan"
+				}
+			]
+		}
+	},
+
+	"tables": {
+		"tbl_halte_angkutan_umum": {
+			"data_source": "lla/jumlah-halte-angkutan-umum",
+			"columns": [
+				{ "id": "uraian", "label": "Uraian", "type": "text" },
+				{ "id": "tahun_2023", "label": "Tahun 2023", "type": "number" },
+				{ "id": "tahun_2024", "label": "Tahun 2024", "type": "number" },
+				{ "id": "tahun_2025", "label": "Tahun 2025", "type": "number" }
+			]
+		},
+		"tbl_lokasi_halte": {
+			"data_source": "lla/lokasi-halte",
+			"columns": [
+				{ "id": "nama_halte", "label": "Nama Halte", "type": "text" },
+				{ "id": "kode", "label": "Kode", "type": "text" },
+				{ "id": "lat", "label": "Latitude", "type": "number" },
+				{ "id": "long", "label": "Longitude", "type": "number" },
+				{ "id": "gambar", "label": "Gambar", "type": "image" }
+			]
+		},
+		"tbl_persentasi_rambu": {
+			"data_source": "lla/persentasi-pemasangan-rambu",
+			"columns": [
+				{ "id": "uraian", "label": "Uraian", "type": "text" },
+				{ "id": "tahun_2023", "label": "Tahun 2023", "type": "number" },
+				{ "id": "tahun_2024", "label": "Tahun 2024", "type": "number" },
+				{ "id": "tahun_2025", "label": "Tahun 2025", "type": "number" }
+			]
+		},
+		"tbl_fasilitas_realisasi": {
+			"data_source": "lla/fasilitas-perlengkapan-realisasi",
+			"columns": [
+				{ "id": "uraian", "label": "Uraian", "type": "text" },
+				{ "id": "tahun_2022", "label": "Tahun 2022", "type": "number" },
+				{ "id": "tahun_2023", "label": "Tahun 2023", "type": "number" },
+				{ "id": "tahun_2024", "label": "Tahun 2024", "type": "number" }
+			]
+		},
+		"tbl_fasilitas_kebutuhan": {
+			"data_source": "lla/fasilitas-perlengkapan-kebutuhan",
+			"columns": [
+				{ "id": "uraian", "label": "Uraian", "type": "text" },
+				{ "id": "tahun_2022", "label": "Tahun 2022", "type": "number" },
+				{ "id": "tahun_2023", "label": "Tahun 2023", "type": "number" }
+			]
+		}
+	}
+}
