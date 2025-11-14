@@ -35,14 +35,16 @@ const SidebarMenu = ({ item, level = 0 }) => {
 	if (item.children && item.children.length > 0) {
 		return (
 			<li
-				className={`${isParentActive ? "bg-gray-700/50 rounded-md" : ""} my-1`}
+				className={`${
+					isParentActive ? "bg-primary-dark/50 rounded-md" : ""
+				} my-1`}
 			>
 				<div
 					onClick={() => setIsOpen(!isOpen)}
-					className="flex items-center justify-between p-3 cursor-pointer hover:bg-gray-700/50 rounded-md transition-colors duration-200"
+					className="flex items-center justify-between p-3 cursor-pointer hover:bg-primary-dark/50 rounded-md transition-colors duration-200"
 				>
 					<div className="flex items-center">
-						<Icon size={20} className="text-sky-400 shrink-0" />
+						<Icon size={20} className="text-accent shrink-0" />
 						<span
 							className={`ml-4 text-sm font-medium whitespace-nowrap transition-all duration-300 ${
 								isSidebarOpen ? "opacity-100" : "opacity-0 w-0"
@@ -79,12 +81,12 @@ const SidebarMenu = ({ item, level = 0 }) => {
 				<NavLink
 					to={item.path}
 					className={({ isActive }) =>
-						`flex items-center p-3 hover:bg-gray-700/50 rounded-md transition-colors duration-200 ${
-							isActive ? "bg-sky-500/20 text-sky-300" : ""
+						`flex items-center p-3 hover:bg-primary-dark/50 rounded-md transition-colors duration-200 ${
+							isActive ? "bg-accent/20 text-accent" : ""
 						}`
 					}
 				>
-					<Icon size={20} className="text-sky-400 shrink-0" />
+					<Icon size={20} className="text-accent shrink-0" />
 					<span
 						className={`ml-4 text-sm font-medium whitespace-nowrap transition-all duration-300 ${
 							isSidebarOpen ? "opacity-100" : "opacity-0 w-0"

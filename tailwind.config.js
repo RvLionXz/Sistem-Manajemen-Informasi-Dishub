@@ -3,6 +3,11 @@ export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		extend: {
+			colors: {
+				primary: "#3B3A79",
+				"primary-dark": "#2e2d5f",
+				accent: "#FDBB0B",
+			},
 			keyframes: {
 				fadeIn: {
 					"0%": { opacity: "0", transform: "translateY(10px)" },

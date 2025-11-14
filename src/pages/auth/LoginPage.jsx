@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { ActivitySquare, Mail, Lock } from "lucide-react";
+import { Mail, Lock } from "lucide-react";
 import { useAppContext } from "../../context/AppContext";
 
 const LoginPage = () => {
@@ -15,7 +15,7 @@ const LoginPage = () => {
 		setError("");
 
 		if (email === "admin@mail.com" && password === "password") {
-			const userData = { name: "Admin Keren", email: "admin@mail.com" };
+			const userData = { name: "Admin Dishub", email: "admin@mail.com" };
 			login(userData);
 			navigate("/dashboard");
 		} else {
@@ -26,17 +26,15 @@ const LoginPage = () => {
 	return (
 		<div className="min-h-screen flex flex-col justify-center items-center bg-gray-100 p-4">
 			<div className="max-w-md w-full bg-white p-8 rounded-2xl shadow-lg">
-				<div className="flex justify-center mb-6">
-					<ActivitySquare size={40} className="text-sky-500" />
-					<h1 className="text-3xl font-bold ml-2 text-gray-800">
-						<span className="text-sky-500">Sistem</span>Info
-					</h1>
+				<div className="flex justify-center items-center mb-6">
+					<img src="/logo-dishub.png" alt="Logo SIMADA" className="h-12 w-12" />
+					<h1 className="text-3xl font-bold ml-3 text-gray-800">SIMADA</h1>
 				</div>
 				<h2 className="text-2xl font-semibold text-center text-gray-700 mb-2">
-					Selamat Datang Kembali
+					Selamat Datang
 				</h2>
 				<p className="text-center text-gray-500 mb-8">
-					Silakan login untuk melanjutkan ke sistem.
+					Sistem Manajemen Data Dinas Perhubungan
 				</p>
 
 				{error && (
@@ -62,7 +60,7 @@ const LoginPage = () => {
 							type="email"
 							value={email}
 							onChange={(e) => setEmail(e.target.value)}
-							className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500 transition"
+							className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary transition"
 							placeholder="contoh: admin@mail.com"
 							required
 						/>
@@ -80,14 +78,14 @@ const LoginPage = () => {
 							type="password"
 							value={password}
 							onChange={(e) => setPassword(e.target.value)}
-							className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500 transition"
+							className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary transition"
 							placeholder="Ketik password Anda"
 							required
 						/>
 					</div>
 					<button
 						type="submit"
-						className="w-full bg-sky-600 text-white py-3 rounded-md hover:bg-sky-700 transition-colors font-semibold shadow-md"
+						className="w-full bg-primary text-white py-3 rounded-md hover:bg-primary-dark transition-colors font-semibold shadow-md"
 					>
 						Login
 					</button>
@@ -96,7 +94,7 @@ const LoginPage = () => {
 					Belum punya akun?{" "}
 					<Link
 						to="/register"
-						className="text-sky-600 hover:underline font-medium"
+						className="text-primary hover:underline font-medium"
 					>
 						Daftar di sini
 					</Link>

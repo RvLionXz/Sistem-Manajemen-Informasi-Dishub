@@ -47,7 +47,7 @@ const DataTable = ({ columns, data, onEdit, onDelete, onAdd }) => {
 				</div>
 				<button
 					onClick={onAdd}
-					className="flex items-center gap-2 bg-sky-600 text-white px-4 py-2 rounded-md hover:bg-sky-700 transition-colors w-full sm:w-auto justify-center"
+					className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors w-full sm:w-auto justify-center"
 				>
 					<Plus size={18} />
 					<span>Tambah Data</span>
@@ -92,7 +92,7 @@ const DataTable = ({ columns, data, onEdit, onDelete, onAdd }) => {
 									<td className="px-6 py-4 flex justify-center items-center space-x-2">
 										<button
 											onClick={() => onEdit(row)}
-											className="p-2 text-blue-500 hover:text-blue-700 hover:bg-blue-100 rounded-full"
+											className="p-2 text-primary hover:text-white hover:bg-primary-dark rounded-full"
 										>
 											<Edit size={18} />
 										</button>
