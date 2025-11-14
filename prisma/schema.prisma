@@ -1,0 +1,66 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Menu {
+  id        Int     @id @default(autoincrement())
+  name      String
+  icon      String?
+  path      String? @unique
+  parentId  Int?
+  order     Int     @default(0)
+
+  parent    Menu?   @relation("MenuToMenu", fields: [parentId], references: [id], onDelete: Cascade)
+  children  Menu[]  @relation("MenuToMenu")
+}
+
+model Page {
+  id          Int       @id @default(autoincrement())
+  path        String    @unique
+  title       String
+  layoutType  String    // "table" atau "tabs"
+
+  tableId     Int?      @unique
+  table       Table?    @relation(fields: [tableId], references: [id])
+  
+  tabs        PageTab[]
+}
+
+model PageTab {
+  id      Int   @id @default(autoincrement())
+  label   String
+  order   Int   @default(0)
+
+  pageId  Int
+  page    Page  @relation(fields: [pageId], references: [id], onDelete: Cascade)
+  
+  tableId Int
+  table   Table @relation(fields: [tableId], references: [id])
+}
+
+model Table {
+  id          Int       @id @default(autoincrement())
+  name        String    @unique // Nama tabel fisik di DB, e.g., "tbl_lokasi_halte"
+  description String?
+
+  columns     TableColumn[]
+  
+  page        Page?
+  pageTabs    PageTab[]
+}
+
+model TableColumn {
+  id            Int     @id @default(autoincrement())
+  columnName    String  // Nama kolom fisik di DB, e.g., "nama_halte"
+  columnLabel   String  // Nama yang ditampilkan di UI, e.g., "Nama Halte"
+  dataType      String  // "text", "number", "image", "textarea", "date"
+  order         Int     @default(0)
+
+  tableId       Int
+  table         Table   @relation(fields: [tableId], references: [id], onDelete: Cascade)
+}
